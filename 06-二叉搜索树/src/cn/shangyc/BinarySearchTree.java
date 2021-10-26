@@ -261,7 +261,8 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 	private void inorderIterate(Node<E> root,Visitor<E> visitor) {
 		Stack<Node<E>> stack = new Stack<>();
 		Node<E> node = root;
-		while (!stack.isEmpty()) {
+		//TODO
+		while (node !=  null || !stack.isEmpty()) {
 			if (node != null) {
 				stack.push(node);
 				node = node.left;
